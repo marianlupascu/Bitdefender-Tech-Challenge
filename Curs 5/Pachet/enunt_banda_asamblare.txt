@@ -1,0 +1,55 @@
+Sa se implementeze biblioteca pipeline.dll. Aceasta biblioteca implementeaza functiile:
+
+int InitPipeline(InitParams * pInitParams);
+int GenerateElement(ELEMENT elem);
+int UninitPipeline();
+
+Scopul acestei biblioteci e de a simula o linie de productie cu 3 benzi:
+-	o banda pe care se pot pune piulite, in principiu oricate
+-	o banda pe care se pot pune suruburi, in principiu oricate
+-	o banda pe care se poate pune la un moment dat maxim un surub si o piulita, orice alt surub sau piulita 
+pot fi adaugate doar daca banda le-a eliminat intr-un produs final
+
+InitPipeline initializeaza aceasta infrastructura si primeste o structura cu 3 callbackuri
+	CALLBACK_SURUB pfnSurub;
+	CALLBACK_PIULITA pfnPiulita;
+	CALLBACK_PRODUS pfnProdus;
+
+astfel acestia sunt 3 pointeri de functii primiti de la aplicatia care va incarca acest dll, ca in exemplu 
+incarcat pe site. Functia pfnSurub va fi chemata in momentul in care un surub a fost lasat sa ajunga pe banda de produs, 
+functia pfnPiulita fiind apelata cand o piulita a fost lasata pe banda de asamblare a produsului. pfnProdus va fi
+ apelata atunci cand exista o piulita si un surub pe banda de asamblare, acestea fiind luate intr-un produs. 
+Astfel pfnPiulita trebuie sa fie apelata de fiecare data pe acelasi thread care reprezinta banda de asamblare a
+ piulitelor, pfnSurub trebuie sa fie apelata de fiecare data pe acelasi thread care reprezinta banda de asamblare 
+a suruburilor, 
+thread diferit de cel care proceseze piulitele, si pfnProdus trebuie sa fie apelata de fiecare data pe acelasi thread 
+care reprezinta banda de asamblare a produselor, dar evident diferit de threadurile piulitelor si suruburilor.
+Astfel, se considera erori:
+-	apelarea pfnPiulita daca nu sunt piulite pe banda de asamblare de suruburi
+-	apelarea pfnSurub daca nu sunt suruburi pe banda de asamblare de suruburi
+-	apelarea pfnProdus daca in prealabil nu au fost apelate pfnPiulita si pfnSurub
+-	apelarea pfnPiulita de doua ori inainte de pfnProdus sa fi fost chemat macar o data
+-	apelarea pfnSurub de doua ori inainte de pfnProdus sa fi fost chemat macar o data
+-	neeliberarea de alte piulite sau suruburi daca sunt disponibile si pfnProdus a fost chemata.
+
+GenerateElement e o functie care va fi apelata cu una din valorile definite in pipeline.h:
+	SURUB,
+	PIULITA,
+daca e apelata cu SURUB inseamna ca threadul care se ocupa de banda de asamblare a suruburilor trebuie instiintat 
+cumva ca a primit un nou surub
+daca e apelata cu PIULITA inseamna ca threadul care se ocupa de banda de asamblare a piulitelor trebuie instiintat 
+cumva ca a primit o noua piulita
+dupa semnalizarea threadurilor respective functia se termina
+
+
+UninitPipeline e chemata pentru a dezactiva benzile de asamblare si a elibera toate structurile create, dupa 
+UninitPipeline putand fi chemat din nou InitPipeline. La UninitPipeline toate piulitele si suruburile ramase pe benzi se arunca
+
+Indicatii de implementare
+Sugestia ar fi sa mai creati un thread master pe langa cele 3 precizate, astfel acesta ocupandu-se de starea
+ fiecarui din cele 3 threaduri si semnalizandu-le sa isi schimbe starea in functie de situatia care exista pe 
+banda de asamblare 
+cum am discutat la sfarsitul cursului.
+
+
+Se considera o implementare completa daca testerul afiseaza ca sunt toate testele trecute.
