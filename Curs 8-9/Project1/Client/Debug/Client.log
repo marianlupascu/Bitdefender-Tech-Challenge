@@ -1,0 +1,5 @@
+﻿  Client.cpp
+c:\users\marian\documents\documente\bitdefender tech challenge\curs 11\project1\client\client.cpp(36): warning C4101: 'ipstringbuffer': unreferenced local variable
+c:\users\marian\documents\documente\bitdefender tech challenge\curs 11\project1\client\client.cpp(28): warning C4101: 'iRetval': unreferenced local variable
+c:\users\marian\documents\documente\bitdefender tech challenge\curs 11\project1\client\client.cpp(35): warning C4101: 'sockaddr_ip': unreferenced local variable
+  Client.vcxproj -> C:\Users\Marian\Documents\Documente\Bitdefender Tech Challenge\Curs 11\Project1\Debug\Client.exe
