@@ -1,0 +1,15 @@
+﻿  EnumDir(adaugat calcul md5).cpp
+c:\users\marian\documents\documente\bitdefender tech challenge\curs 2\exemple\enumdir(adaugat calcul md5)\enumdir(adaugat calcul md5).cpp(34): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'wchar_t *'
+  c:\users\marian\documents\documente\bitdefender tech challenge\curs 2\exemple\enumdir(adaugat calcul md5)\enumdir(adaugat calcul md5).cpp(34): note: consider using '%ls' in the format string
+  c:\users\marian\documents\documente\bitdefender tech challenge\curs 2\exemple\enumdir(adaugat calcul md5)\enumdir(adaugat calcul md5).cpp(34): note: consider using '%lls' in the format string
+  c:\users\marian\documents\documente\bitdefender tech challenge\curs 2\exemple\enumdir(adaugat calcul md5)\enumdir(adaugat calcul md5).cpp(34): note: consider using '%Ls' in the format string
+  c:\users\marian\documents\documente\bitdefender tech challenge\curs 2\exemple\enumdir(adaugat calcul md5)\enumdir(adaugat calcul md5).cpp(34): note: consider using '%ws' in the format string
+c:\users\marian\documents\documente\bitdefender tech challenge\curs 2\exemple\enumdir(adaugat calcul md5)\enumdir(adaugat calcul md5).cpp(93): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'wchar_t *'
+  c:\users\marian\documents\documente\bitdefender tech challenge\curs 2\exemple\enumdir(adaugat calcul md5)\enumdir(adaugat calcul md5).cpp(93): note: consider using '%ls' in the format string
+  c:\users\marian\documents\documente\bitdefender tech challenge\curs 2\exemple\enumdir(adaugat calcul md5)\enumdir(adaugat calcul md5).cpp(93): note: consider using '%lls' in the format string
+  c:\users\marian\documents\documente\bitdefender tech challenge\curs 2\exemple\enumdir(adaugat calcul md5)\enumdir(adaugat calcul md5).cpp(93): note: consider using '%Ls' in the format string
+  c:\users\marian\documents\documente\bitdefender tech challenge\curs 2\exemple\enumdir(adaugat calcul md5)\enumdir(adaugat calcul md5).cpp(93): note: consider using '%ws' in the format string
+c:\users\marian\documents\documente\bitdefender tech challenge\curs 2\exemple\enumdir(adaugat calcul md5)\enumdir(adaugat calcul md5).cpp(176): warning C4477: 'wprintf' : format string '%ld' requires an argument of type 'long', but variadic argument 2 has type 'LONGLONG'
+  c:\users\marian\documents\documente\bitdefender tech challenge\curs 2\exemple\enumdir(adaugat calcul md5)\enumdir(adaugat calcul md5).cpp(176): note: consider using '%lld' in the format string
+  c:\users\marian\documents\documente\bitdefender tech challenge\curs 2\exemple\enumdir(adaugat calcul md5)\enumdir(adaugat calcul md5).cpp(176): note: consider using '%I64d' in the format string
+  EnumDir(adaugat calcul md5).vcxproj -> C:\Users\Marian\Documents\Documente\Bitdefender Tech Challenge\Curs 2\Exemple\Debug\EnumDir(adaugat calcul md5).exe
