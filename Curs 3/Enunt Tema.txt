@@ -1,0 +1,11 @@
+Simularea unei intersectii.
+
+Sa se scrie un program care genereaza N(sa zicem 200) threaduri, fiecare thread avand o directie alesa aleator din una din valorile:
+0 - NS
+1 - SN
+2 - EV
+3 - VE
+
+Pe fiecare directie NS respectiv EV se afla cate un semafor simulat de un eveniment.
+Trebuie sa mai existe un thread master care modifica semafoarele, dand la fiecare 90 de secunde drumul cate unui semafor si blocand pe celalalt, avand o perioada de 3 secunde in care amandoua sunt rosii pentru a elibera intersectia.
+Fiecare thread care ajunge in intersectie verifica daca mai sunt masini in fata lui pe aceeasi directie si calculeaza timpul necesar pana sa treaca ca fiind numarul de masini din fata lui + 3 secunde din momentul in care semaforul este verde, daca nu este verde poate trece abia dupa ce masinile din fata lui au trecut + inca 3 secunde.
