@@ -1,0 +1,6 @@
+﻿  P1.cpp
+c:\users\marian\documents\documente\bitdefender tech challenge\curs 6\pachet\pipeline\p1\p1.cpp(3): warning C4005: 'TEXT': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winnt.h(584): note: see previous definition of 'TEXT'
+c:\users\marian\documents\documente\bitdefender tech challenge\curs 6\pachet\pipeline\p1\p1.cpp(10): warning C4091: 'typedef ': ignored on left of 'message' when no variable is declared
+c:\users\marian\documents\documente\bitdefender tech challenge\curs 6\pachet\pipeline\p1\p1.cpp(16): warning C4353: nonstandard extension used: constant 0 as function expression.  Use '__noop' function intrinsic instead
+c:\users\marian\documents\documente\bitdefender tech challenge\curs 6\pachet\pipeline\p1\p1.cpp(48): error C4700: uninitialized local variable 'bytesWritten' used
