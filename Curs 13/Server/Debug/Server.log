@@ -1,0 +1,4 @@
+﻿  Server.cpp
+c:\users\marian\documents\documente\bitdefender tech challenge\curs 3\tema\server\server.cpp(95): warning C4101: 'recvbuf': unreferenced local variable
+c:\users\marian\documents\documente\bitdefender tech challenge\curs 3\tema\server\server.cpp(94): warning C4101: 'iSendResult': unreferenced local variable
+  Server.vcxproj -> C:\Users\Marian\Documents\Documente\Bitdefender Tech Challenge\Curs 3\Tema\Debug\Server.exe

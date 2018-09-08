@@ -1,0 +1,3 @@
+﻿  Client.cpp
+c:\users\marian\documents\documente\bitdefender tech challenge\curs 3\tema\client\client.cpp(33): warning C4018: '<=': signed/unsigned mismatch
+  Client.vcxproj -> C:\Users\Marian\Documents\Documente\Bitdefender Tech Challenge\Curs 3\Tema\Debug\Client.exe
