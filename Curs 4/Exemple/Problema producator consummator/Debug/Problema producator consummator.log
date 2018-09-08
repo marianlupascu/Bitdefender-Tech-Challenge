@@ -1,0 +1,7 @@
+﻿  Problema producator consummator.cpp
+c:\users\marian\documents\documente\bitdefender tech challenge\curs 4\exemple\problema producator consummator\problema producator consummator.cpp(40): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'wchar_t *'
+  c:\users\marian\documents\documente\bitdefender tech challenge\curs 4\exemple\problema producator consummator\problema producator consummator.cpp(40): note: consider using '%ls' in the format string
+  c:\users\marian\documents\documente\bitdefender tech challenge\curs 4\exemple\problema producator consummator\problema producator consummator.cpp(40): note: consider using '%lls' in the format string
+  c:\users\marian\documents\documente\bitdefender tech challenge\curs 4\exemple\problema producator consummator\problema producator consummator.cpp(40): note: consider using '%Ls' in the format string
+  c:\users\marian\documents\documente\bitdefender tech challenge\curs 4\exemple\problema producator consummator\problema producator consummator.cpp(40): note: consider using '%ws' in the format string
+  Problema producator consummator.vcxproj -> C:\Users\Marian\Documents\Documente\Bitdefender Tech Challenge\Curs 4\Exemple\Debug\Problema producator consummator.exe
